@@ -1,80 +1,108 @@
 const units = [
 { name: 'probe', cost: 50, img: 'probe.jpg' },
-{ name: 'zealot', cost: 100, img: 'url' },
-{ name: 'stalker', cost: 175, img: 'url' },
-{ name: 'sentry', cost: 150, img: 'url' },
-{ name: 'adept', cost: 125, img: 'url' },
-{ name: 'high templar', cost: 200, img: 'url' },
-{ name: 'dark templar', cost: 250, img: 'url' },
-{ name: 'observer', cost: 100, img: 'url' },
-{ name: 'warp prism', cost: 250, img: 'url' },
-{ name: 'immortal', cost: 375, img: 'url' },
-{ name: 'colossus', cost: 500, img: 'url' },
-{ name: 'disruptor', cost: 300, img: 'url' },
-{ name: 'phoenix', cost: 250, img: 'url' },
-{ name: 'void ray', cost: 400, img: 'url' },
-{ name: 'oracle', cost: 300, img: 'url' },
-{ name: 'tempest', cost: 425, img: 'url' },
-{ name: 'carrier', cost: 600, img: 'url' },
-{ name: 'mothership', cost: 800, img: 'url' },
-{ name: 'scv', cost: 50, img: 'url' },
-{ name: 'marine', cost: 50, img: 'url' },
-{ name: 'marauder', cost: 125, img: 'url' },
-{ name: 'reaper', cost: 100, img: 'url' },
-{ name: 'ghost', cost: 275, img: 'url' },
-{ name: 'hellion', cost: 100, img: 'url' },
-{ name: 'widow mine', cost: 100, img: 'url' },
-{ name: 'tank', cost: 275, img: 'url' },
-{ name: 'cyclone', cost: 250, img: 'url' },
-{ name: 'viking', cost: 225, img: 'url' },
-{ name: 'medivac', cost: 200, img: 'url' },
-{ name: 'banshee', cost: 250, img: 'url' },
-{ name: 'raven', cost: 300, img: 'url' },
-{ name: 'battlecruiser', cost: 700, img: 'url' },
-{ name: 'drone', cost: 50, img: 'url' },
-{ name: 'queen', cost: 150, img: 'url' },
-{ name: 'zerling', cost: 25, img: 'url' },
-{ name: 'baneling', cost: 75, img: 'url' },
-{ name: 'roach', cost: 100, img: 'url' },
-{ name: 'ravager', cost: 200, img: 'url' },
-{ name: 'hydralisk', cost: 150, img: 'url' },
-{ name: 'lurker', cost: 300, img: 'url' },
-{ name: 'infestor', cost: 175, img: 'url' },
-{ name: 'swarm host', cost: 175, img: 'url' },
-{ name: 'ultralisk', cost: 500, img: 'url' },
-{ name: 'overlord', cost: 100, img: 'url' },
-{ name: 'overseer', cost: 200, img: 'url' },
-{ name: 'mutalisk', cost: 200, img: 'url' },
-{ name: 'corruptor', cost: 250, img: 'url' },
-{ name: 'viper', cost: 300, img: 'url' },
-{ name: 'brood lord', cost: 550, img: 'url' }
+{ name: 'zealot', cost: 100, img: 'zealot.jpg' },
+{ name: 'stalker', cost: 175, img: 'stalker.jpg' },
+{ name: 'sentry', cost: 150, img: 'sentry.jpg' },
+{ name: 'adept', cost: 125, img: 'adept.jpg' },
+{ name: 'high templar', cost: 200, img: 'high_templar.jpg' },
+{ name: 'dark templar', cost: 250, img: 'dark_templar.jpg' },
+{ name: 'observer', cost: 100, img: 'observer.jpg' },
+{ name: 'warp prism', cost: 250, img: 'warp_prism.jpg' },
+{ name: 'immortal', cost: 375, img: 'immortal.jpg' },
+{ name: 'colossus', cost: 500, img: 'colossus.jpg' },
+{ name: 'disruptor', cost: 300, img: 'disruptor.jpg' },
+{ name: 'phoenix', cost: 250, img: 'phoenix.jpg' },
+{ name: 'void ray', cost: 400, img: 'voidray.jpg' }, 
+{ name: 'oracle', cost: 300, img: 'oracle.jpg' },
+{ name: 'tempest', cost: 425, img: 'tempest.jpg' },
+{ name: 'carrier', cost: 600, img: 'carrier.jpg' },
+{ name: 'mothership', cost: -800, img: 'mothership.jpg' },
+{ name: 'scv', cost: 50, img: 'scv.jpg' },
+{ name: 'marine', cost: 50, img: 'marine.jpg' },
+{ name: 'marauder', cost: 125, img: 'marauder.jpg' },
+{ name: 'reaper', cost: 100, img: 'reaper.jpg' },
+{ name: 'ghost', cost: 275, img: 'ghost.jpg' },
+{ name: 'hellion', cost: 100, img: 'hellion.jpg' },
+{ name: 'widow mine', cost: 100, img: 'widow_mine.jpg' },
+{ name: 'tank', cost: 275, img: 'tank.jpg' },
+{ name: 'cyclone', cost: 250, img: 'cyclone.jpg' },
+{ name: 'viking', cost: 225, img: 'viking.jpg' },
+{ name: 'medivac', cost: 200, img: 'medivac.jpg' },
+{ name: 'banshee', cost: 250, img: 'banshee.jpg' },
+{ name: 'raven', cost: 300, img: 'raven.jpg' },
+{ name: 'battlecruiser', cost: 700, img: 'battlecruiser.jpg' },
+{ name: 'drone', cost: 50, img: 'drone.jpg' },
+{ name: 'queen', cost: 150, img: 'queen.jpg' },
+{ name: 'zerling', cost: 25, img: 'zerling.jpg' },
+{ name: 'baneling', cost: 75, img: 'baneling.jpg' },
+{ name: 'roach', cost: 100, img: 'roach.jpg' },
+{ name: 'ravager', cost: 200, img: 'ravager.jpg' },
+{ name: 'hydralisk', cost: 150, img: 'hydralisk.jpg' },
+{ name: 'lurker', cost: 300, img: 'lurker.jpg' },
+{ name: 'infestor', cost: 175, img: 'infestor.jpg' },
+{ name: 'swarm host', cost: 175, img: 'swarm_host.jpg' },
+{ name: 'ultralisk', cost: 500, img: 'ultralisk.jpg' },
+{ name: 'overlord', cost: 100, img: 'overlord.jpg' },
+{ name: 'overseer', cost: 200, img: 'overseer.jpg' },
+{ name: 'mutalisk', cost: 200, img: 'mutalisk.jpg' },
+{ name: 'corruptor', cost: 250, img: 'corruptor.jpg' },
+{ name: 'viper', cost: 300, img: 'viper.jpg' },
+{ name: 'brood lord', cost: 550, img: 'blood_lord.jpg' }
 ]
 
-// const get5RandomUnits = () => _.map(_.times(5, () => _.random(0, units.length - 1)), _.propertyOf(units));
-
-
 function getRandomInt(max) {
-    return Math.floor(Math.random() * (max + 1));
+  return Math.floor(Math.random() * (max + 1));
+}
+
+function get5RandomUnits() {
+  var random=[];
+  for(let i=0;i<NUMBER_OF_UNITS;i++){
+    let randomIndex=getRandomInt(units.length - 1)
+    random.push(units[randomIndex]);
+}
+return random
+}
+let NUMBER_OF_UNITS;
+let randomUnits;
+let totalCost;
+function reset(){
+  NUMBER_OF_UNITS = getRandomInt(4)+1;
+  randomUnits=get5RandomUnits()
+totalCost=_.sum(_.map(randomUnits, 'cost'))
+  $("#result").text('');
+  $('#answer').text('')
+  $("#guess").val("").focus();
+  var imageHtml = '';
+  for (let i = 0; i < randomUnits.length; i++) {
+    imageHtml += `<img class="unit" src="${randomUnits[i].img}" alt="${randomUnits[i].name}" title="${randomUnits[i].name}">`
   }
-  function get5RandomUnits() {
-    return [...Array(5)].map(() => getRandomInt(units.length - 1)).map(i => units[i]);
-  }
-//let randomUnits=get5RandomUnits()
-//_.sum(_.map(randomUnits, 'cost')) == guess
-//let guess = $('input').val();
+  $('.image-container').html(imageHtml)
+}
+
+$('#submit').on('click', function () {
+let guess = $("#guess").val(); 
+guess=parseInt(guess)
+if ( totalCost=== guess){
+  $("#result").text("Correct!").removeClass("text-danger").addClass("text-success")
+}
+else{
+  $("#result").text("Wrong!").removeClass("text-success").addClass("text-danger")
+}
+})
+$('#playAgain').on('click', reset)
+$('#showAnswer').on('click', function(){
+  $('#answer').text('Total cost(minerals+gas) is '+ totalCost)
+})
+reset()
 
 
 
 
-//$('#submit').on('click', function () {})
-//$('#playAgain').on('click', function () {})
 
 
 
-//.text-success for green
-
-//.text-danger for red
-
-//https://starcraft.fandom.com/wiki/List_of_StarCraft_II_units#Legacy_of_the_Void
-
+  //     return [...Array(5)].map(() =>getRandomInt(units.length -  1)).map(i => units[i]);
+  // add breakdown of each unit cost when show answer clicked
+  // add inputs below each units that will checkmark if correct value is inputted 
+  // make it so when enter is clicked it submits
 

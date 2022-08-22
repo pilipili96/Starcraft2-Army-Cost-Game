@@ -22,7 +22,8 @@ h1{
     text-align:center;
 }
 .unit{
-    width:150px;
+   width:150px;
+   margin:7px;
 }
 .input{
     font-size:40px
