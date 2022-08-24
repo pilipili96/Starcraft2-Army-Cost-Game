@@ -4,25 +4,23 @@
     display: block;
     text-align: center;
 }
-
 .navbar-nav > li {
     display: inline-block;
     float:none;
 }
-
 .nav-item{
     font-size: 30px
 }
 h1{
     text-align:center;
     font-size:6rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, serif,Times, serif;
 }
 .center{
     text-align:center;
 }
 .unit{
-   width:150px;
+   width:120px;
    margin:7px;
 }
 .input{
@@ -31,4 +29,18 @@ h1{
 .btn{
     font-size:25px;
     margin:15px 7px
+}
+.size{
+    font-size:30px;
+}
+h2{
+    font-size:4rem;
+    font-family: Georgia, serif,Times, serif;
+}
+.table-bordered{
+    border:1px;
+}
+p,td,tr{
+    font-size:18px;
+    font-family: Georgia, serif,Times, serif;
 }

@@ -39,7 +39,7 @@ const units = [
 { name: 'ravager', cost: 200, img: 'ravager.jpg' },
 { name: 'hydralisk', cost: 150, img: 'hydralisk.jpg' },
 { name: 'lurker', cost: 300, img: 'lurker.jpg' },
-{ name: 'infestor', cost: 175, img: 'infestor.jpg' },
+{ name: 'infestor', cost: 250, img: 'infestor.jpg' },
 { name: 'swarm host', cost: 175, img: 'swarm_host.jpg' },
 { name: 'ultralisk', cost: 500, img: 'ultralisk.jpg' },
 { name: 'overlord', cost: 100, img: 'overlord.jpg' },
@@ -49,29 +49,30 @@ const units = [
 { name: 'viper', cost: 300, img: 'viper.jpg' },
 { name: 'brood lord', cost: 550, img: 'blood_lord.jpg' }
 ]
+let NUMBER_OF_UNITS;
+let randomUnits;
+let totalCost;
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
-}
+};
 
-function get5RandomUnits() {
+function getRandomUnits() {
   var random=[];
   for(let i=0;i<NUMBER_OF_UNITS;i++){
     let randomIndex=getRandomInt(units.length - 1)
     random.push(units[randomIndex]);
 }
 return random
-}
-let NUMBER_OF_UNITS;
-let randomUnits;
-let totalCost;
+};
+
 function reset(){
   NUMBER_OF_UNITS = getRandomInt(4)+1;
-  randomUnits=get5RandomUnits()
+  randomUnits=getRandomUnits()
 totalCost=_.sum(_.map(randomUnits, 'cost'))
   $("#result").text('');
   $('#answer').text('')
-  $("#guess").val("").focus();
+  $("#guess").val('').focus();
   var imageHtml = '';
   for (let i = 0; i < randomUnits.length; i++) {
     imageHtml += `<img class="unit" src="${randomUnits[i].img}" alt="${randomUnits[i].name}" title="${randomUnits[i].name}">`
@@ -91,18 +92,13 @@ else{
 })
 $('#playAgain').on('click', reset)
 $('#showAnswer').on('click', function(){
-  $('#answer').text('Total cost(minerals+gas) is '+ totalCost)
+  $('#answer').text('Total cost (minerals+gas) is '+ totalCost)
 })
+var input = document.getElementById("guess");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("submit").click();
+  }
+});
 reset()
-
-
-
-
-
-
-
-  //     return [...Array(5)].map(() =>getRandomInt(units.length -  1)).map(i => units[i]);
-  // add breakdown of each unit cost when show answer clicked
-  // add inputs below each units that will checkmark if correct value is inputted 
-  // make it so when enter is clicked it submits
-
