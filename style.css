@@ -44,3 +44,9 @@ p,td,tr{
     font-size:18px;
     font-family: Georgia, serif,Times, serif;
 }
+.card{
+    margin-top: 50px;
+}
+.wicked{
+    width:25px;
+}
