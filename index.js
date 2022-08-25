@@ -95,8 +95,11 @@ guess=parseInt(guess)
 if ( totalCost=== guess){
   $("#result").text("Correct!").removeClass("text-danger").addClass("text-success")
 }
+else if(totalCost<guess){
+  $("#result").text("Wrong! (too much) ").removeClass("text-success").addClass("text-danger")
+}
 else{
-  $("#result").text("Wrong!").removeClass("text-success").addClass("text-danger")
+  $("#result").text("Wrong! (too little) ").removeClass("text-success").addClass("text-danger")
 }
 })
 
