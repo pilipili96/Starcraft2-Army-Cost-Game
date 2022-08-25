@@ -23,9 +23,11 @@ const units = [
 { name: 'reaper', cost: 100, img: 'reaper.jpg' },
 { name: 'ghost', cost: 275, img: 'ghost.jpg' },
 { name: 'hellion', cost: 100, img: 'hellion.jpg' },
+{ name: 'hellbat', cost: 100, img: 'hellbat.jpg' },
 { name: 'widow mine', cost: 100, img: 'widow_mine.jpg' },
 { name: 'tank', cost: 275, img: 'tank.jpg' },
 { name: 'cyclone', cost: 250, img: 'cyclone.jpg' },
+{ name: 'thor', cost: 500, img: 'thor.jpg' },
 { name: 'viking', cost: 225, img: 'viking.jpg' },
 { name: 'medivac', cost: 200, img: 'medivac.jpg' },
 { name: 'banshee', cost: 250, img: 'banshee.jpg' },
@@ -47,7 +49,10 @@ const units = [
 { name: 'mutalisk', cost: 200, img: 'mutalisk.jpg' },
 { name: 'corruptor', cost: 250, img: 'corruptor.jpg' },
 { name: 'viper', cost: 300, img: 'viper.jpg' },
-{ name: 'brood lord', cost: 550, img: 'blood_lord.jpg' }
+{ name: 'mule', cost: 0, img: 'mule.jpg' },
+{ name: 'broodling', cost: 0, img: 'bloodling.jpg' },
+{ name: 'liberator', cost: 300, img: 'liberator.jpg' },
+{ name: 'brood lord', cost: 550, img: 'blood_lord.jpg' },
 ]
 let NUMBER_OF_UNITS;
 let randomUnits;
