@@ -54,10 +54,12 @@ const units = [
 { name: 'liberator', cost: 300, img: 'liberator.jpg' },
 { name: 'brood lord', cost: 550, img: 'blood_lord.jpg' },
 ]
+
 let NUMBER_OF_UNITS;
 let randomUnits;
 let totalCost;
 
+//Creates random numbers
 function getRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 };
@@ -71,6 +73,7 @@ function getRandomUnits() {
 return random
 };
 
+//Empties everything when play again is pressed and returns new set of units, also runs when page first opens
 function reset(){
   NUMBER_OF_UNITS = getRandomInt(4)+1;
   randomUnits=getRandomUnits()
@@ -85,6 +88,7 @@ totalCost=_.sum(_.map(randomUnits, 'cost'))
   $('.image-container').html(imageHtml)
 }
 
+//When user submits the numbers, this function checks if they got the answer correct or not and returns appropriate response.
 $('#submit').on('click', function () {
 let guess = $("#guess").val(); 
 guess=parseInt(guess)
@@ -95,10 +99,15 @@ else{
   $("#result").text("Wrong!").removeClass("text-success").addClass("text-danger")
 }
 })
+
+//rest when play again is pressed
 $('#playAgain').on('click', reset)
+//reveals answer 
 $('#showAnswer').on('click', function(){
   $('#answer').text('Total cost (minerals+gas) is '+ totalCost)
 })
+
+// Makes it so when enter is pressed, input is submitted
 var input = document.getElementById("guess");
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
