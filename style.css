@@ -55,13 +55,9 @@ p,td,tr{
 @media (max-width:1000px) {
     h1,h2,h3 {
     font-size:50px;
-    }
+    }}
 
     @media (max-width:500px) {
         h1,h2,h3 {
         font-size:30px;
         }}
-
-
-
-        

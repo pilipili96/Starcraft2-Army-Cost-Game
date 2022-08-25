@@ -35,7 +35,7 @@ const units = [
 { name: 'battlecruiser', cost: 700, img: 'battlecruiser.jpg' },
 { name: 'drone', cost: 50, img: 'drone.jpg' },
 { name: 'queen', cost: 150, img: 'queen.jpg' },
-{ name: 'zerling', cost: 25, img: 'zerling.jpg' },
+{ name: 'zergling', cost: 25, img: 'zergling.jpg' },
 { name: 'baneling', cost: 75, img: 'baneling.jpg' },
 { name: 'roach', cost: 100, img: 'roach.jpg' },
 { name: 'ravager', cost: 200, img: 'ravager.jpg' },
@@ -50,7 +50,7 @@ const units = [
 { name: 'corruptor', cost: 250, img: 'corruptor.jpg' },
 { name: 'viper', cost: 300, img: 'viper.jpg' },
 { name: 'mule', cost: 0, img: 'mule.jpg' },
-{ name: 'broodling', cost: 0, img: 'bloodling.jpg' },
+{ name: 'broodling', cost: 0, img: 'broodling.jpg' },
 { name: 'liberator', cost: 300, img: 'liberator.jpg' },
 { name: 'brood lord', cost: 550, img: 'blood_lord.jpg' },
 ]
