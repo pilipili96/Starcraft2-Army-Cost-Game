@@ -24,7 +24,8 @@ h1{
    margin:7px;
 }
 .input{
-    font-size:40px
+    font-size:40px;
+    max-width: 100%;
 }
 .btn{
     font-size:25px;

@@ -118,4 +118,4 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("submit").click();
   }
 });
-reset()
+$(document).ready(reset);
