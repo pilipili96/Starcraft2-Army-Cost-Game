@@ -103,7 +103,7 @@ else{
 }
 })
 
-//rest when play again is pressed
+//reset when play again is pressed
 $('#playAgain').on('click', reset)
 //reveals answer 
 $('#showAnswer').on('click', function(){
