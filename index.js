@@ -72,7 +72,6 @@ function getRandomUnits () {
 	}
 	return random;
 }
-
 // Empties everything when play again is pressed
 // and returns new set of units, also runs when page first opens
 function reset () {
@@ -106,13 +105,12 @@ $('#submit').on('click', () => {
 	}
 });
 
-// rest when play again is pressed
+// reset when play again is pressed
 $('#playAgain').on('click', reset);
 // reveals answer
 $('#showAnswer').on('click', () => {
 	$('#answer').text(`Total cost (minerals+gas) is ${totalCost}`);
 });
-
 // Makes it so when enter is pressed, input is submitted
 const input = document.getElementById('guess');
 input.addEventListener('keypress', (event) => {
